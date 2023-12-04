@@ -1,0 +1,32 @@
+.service-page {
+    &__consultation {
+        padding-bottom: 150px;
+    }
+
+    &__appointment {
+        height: 750px;
+
+        .section__overlap {
+            top: -89px;
+            height: 805px;
+            z-index: 1000;
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+    .service-page {
+        &__consultation {
+            padding-bottom: 50px;
+        }
+        
+        &__appointment {
+            padding-top: 50px;
+            height: unset;
+
+            .section__overlap {
+                height: unset;
+            }
+        }
+    }
+}

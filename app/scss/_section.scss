@@ -1,0 +1,558 @@
+section {
+    .section-sub-title {
+        &-sub-title {
+            margin-bottom: 20px;
+        }
+
+        &-title {
+            margin-bottom: 30px;
+        }
+    }    
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service {
+    height: 200px;
+    position: relative;
+    z-index: 2;
+
+    &__container {
+        position: relative;
+
+        & > div {
+            position: absolute;
+            top: -140px;
+        }
+    }
+
+   .card {
+    max-height: 300px;
+   }
+
+   p {
+    color: var(--Light);
+   }
+}
+
+.about {
+    height: 978px;
+    padding-top: 142px;
+    
+    &__info {
+
+        &--description {
+            color: var(--Color-2, #192735);
+            font-family: Radley;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 30px 0px 0px 0px;
+            border-left: 3px solid var(--Secondary, #D9A441);
+            padding-left: 55px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.statistic {
+    height: 520px;
+    background: url("../images/banner/banner-statistic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--Light);
+    padding-top: 130px;
+
+    .card {
+        background: inherit;
+        border: none;
+
+        &-header {
+            height: 80px;
+            border: none;
+            background: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+.therapy-service {
+    height: 1067px;
+    z-index: 1000;
+    position: relative;
+
+    &__container {
+        position: relative;
+    }
+
+    .section__overlap {
+        height: 1067px;
+        top: -118px;        
+    }
+
+    &__item {      
+
+        &--title {
+            margin-top: 20px;
+        }
+
+        &--content {
+            margin-top: 30px;
+        }
+    }
+
+    .card {
+        border: 1px solid var(--Secondary, #D9A441);
+        margin-top: 30px;
+
+        .card-header {
+            border: none;
+            border-radius: 30px;
+            background: inherit;
+        }
+    }
+}
+
+.consultation {
+    background: url("../images/banner/banner-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--Light);
+    
+    p {
+        color: var(--Light);
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.stages {
+    .card {
+
+        border: none;
+        background: transparent;
+        position: relative;
+
+        .card-header {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            .icon {
+                width: 80px;
+                height: 80px;
+                border: 1px solid var(--Secondary);
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .card-body {
+            margin-top: 30px;
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .support {
+            height: 68px;
+            width: 68px;
+            position: absolute;
+            top: 40px;
+        }
+    }
+}
+
+.blog {
+    &__info {
+        margin-bottom: 70px;
+    }
+
+    &__card {
+        .card {
+            background: var(--Primary, #2A4359);
+            border: none;
+
+            p {
+                color: var(--Light);
+            }
+
+            &-img-top {
+                background: var(--Color-1);
+                border-radius: 30px 30px 0 0;
+                object-fit: cover;
+                border: none;
+            }
+
+            &-body {
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .calander{
+                    color: var(--Secondary, #D9A441);
+                    font-size: 14px;
+                    line-height: 150%;
+                    margin-bottom: 6px;
+
+                    span {
+                        margin-left: 5px;
+                        margin-right: 15px;
+                    }
+                }
+
+                .read-more {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.why-choose {
+    .media {
+          &-image {
+            align-items: start;
+
+            & > div {    
+                &::before {
+                    top: 30px;
+                    left: 30px;
+                    border-radius: 30px 0 30px 30px;
+                }
+        
+                img {
+                    z-index: 3;
+                    border-radius: 30px 0 30px 30px;
+                    padding: 0;
+                }
+            }
+        }
+
+        &-small {
+            img {
+                right: 50px;
+                left: unset;
+                border-radius: 30px 30px 0px 30px;
+            }
+        }
+    }
+}
+
+.psychologist {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.appointment {
+    height: 719px;
+    position: relative;
+
+    &__container {
+        position: relative;
+    }
+
+    &__info {
+        padding-top: 120px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 19px;
+
+        .btn {
+            margin-top: 11px;
+        }
+    }   
+
+    .section__overlap {
+        padding-top: 0;
+        height: 805px;
+        top: 26px;
+    }
+}
+
+.partner {
+    padding-top: 200px;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    color: var(--Light);
+    p {
+        color: var(--Light);
+    }
+}
+
+.map {
+    padding-bottom: 0;
+}
+
+.question {
+    height: 971px;
+
+    .question__form, .question_media {
+        padding-top: 125px;
+    }
+}
+
+.question-frequently {
+    padding-bottom: 100px;
+}
+
+.price {
+    .card {
+        .secondary-list-style {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: $xl-width) {
+    /* Media */    
+    .why-choose {
+        .media-image {
+            align-items: center;
+        }
+    }
+
+    .about {
+        height: unset;
+        padding-top: 0;
+    }
+
+    .therapy-service {
+        .section__overlap {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .why-choose {
+        .media {            
+            &-small {
+                img {
+                    right: 20px;
+                }
+            }
+        }
+
+        &__info {
+            text-align: center;
+
+            &--vision {
+                text-align: left;
+            }
+
+            .section__progress {
+                text-align: left;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .appointment {
+        &__info {
+            padding-top: 30px;
+        }
+    }
+
+    .question {
+        height: unset;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+        .question__form, .question_media {
+            padding-top: 0;
+        }
+    }
+
+    .price {
+        .card {
+            &-body {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;  
+    }
+
+    // About section
+    .about {
+        &__info {
+            height: 100%;
+        }
+        
+        text-align: center;
+    }
+
+    .service {       
+        padding-top: 50px;
+        position: unset;
+        height: unset;
+    
+        &__container {
+            position: unset;           
+    
+            & > div {
+                position: unset;
+            }
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .therapy-service {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: unset;
+        position: unset;
+
+        .section__overlap {
+            height: unset;
+        }
+    }
+
+    .why-choose {
+        &__info {           
+            .section__progress {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .reaction {
+        .row {
+            .col-lg-4 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .card {
+            max-width: 370px;
+        }
+    }
+
+    .appointment {
+        height: unset;
+        padding: 0 0 50px 0;
+
+        &__container {
+            margin: 0;
+            max-height: unset;
+        }
+
+        &__info {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        form {
+            padding: 0;
+
+            .button-form {
+                text-align: center;
+            }
+        }
+
+        .section__overlap {
+            height: unset;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .partner {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .statistic {
+        height: unset;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .question {
+        padding-top: 50px;
+    }
+
+    .question-frequently {
+        padding-bottom: 50px;
+    }
+
+    .price {
+        .card {
+           padding: 20px 10px;
+           h5 {
+            margin: 0;
+           }
+        }
+    }
+}
+
+@media (max-width: $md-width) {
+    .price {
+        .card {
+            padding: 50px 30px;
+
+            &-body {
+                padding: 10px;
+                 ul > li {
+                    margin-left: 20px;
+                 }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm-width) {
+    .why-choose {
+        &__info {           
+            .section__progress {
+                margin-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.contact-us {
+    &__info {
+        &--icon{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 40px;
+        }
+
+        &--flow {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: $md-width) {
+    .contact-us {
+        &__info {
+            text-align: center;
+
+            &--icon, &--flow {
+                margin-top: 20px;
+                text-align: left;
+            }
+        }
+    }
+
+    form {
+        .btn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

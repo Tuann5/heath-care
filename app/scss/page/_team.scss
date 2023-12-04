@@ -1,0 +1,28 @@
+.team-page {
+    &__partner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__why-choose {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: $xl-width) {
+    .team-page {
+        &__why-choose {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+    .team-page {
+        &__partner{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}

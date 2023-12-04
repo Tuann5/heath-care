@@ -1,0 +1,24 @@
+.about-page {   
+    &__partner {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: $xl-width) {
+
+    .about-page {
+        &__about {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+
+    .about-page {
+        &__partner {
+            padding-top: 50px;
+        }
+    }
+}

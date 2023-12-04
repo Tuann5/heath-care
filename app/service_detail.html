@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--endbuild-->
+
+    <!-- Goole Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Radley&display=swap" rel="stylesheet">
+
+    <title>Service Detail</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Top nav -->
+        <nav class="navbar d-none d-lg-block navbar-expand top-nav py-0">
+            <div class="container">
+                <ul class="navbar-nav header__contact">
+                    <li class="nav-item">
+                        <div class="nav-link primary-link">
+                            <img src="images/icon/location.svg" alt="" class="img-fluid">
+                            <span class="text-with-image">99 Roving St., Big City, PKU 23456</span>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-5">
+                        <a href="mailto:hello@awesomesite.com" class="nav-link primary-link">
+                            <img src="images/icon/email.svg" alt="" class="img-fluid">
+                            <span class="text-with-image">hello@awesomesite.com</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav header__social">
+                    <li class="nav-item header__social--item">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item header__social--item">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item header__social--item">
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>             
+            </div>
+        </nav>
+
+        <!-- Main nav -->
+        <nav class="navbar navbar-expand-lg main-nav">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="images/Logo.png" class="img-fluid" alt="" width="170"></a>                
+                <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#right-nav">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>    
+                <div class="collapse navbar-collapse" id="right-nav">                    
+                    <ul id="main-nav" class="navbar-nav main-menu ms-auto">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="about.html">About Us</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">About-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">About-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">About-3</a>
+                                </li>                                
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="service.html">Service</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="service_detail.html">Service-1</a>
+                                </li>
+                                <li>
+                                    <a href="service_detail.html">Service-2</a>
+                                </li>
+                                <li>
+                                    <a href="service_detail.html">Service-3</a>
+                                </li>
+                                <li>
+                                    <a href="service_detail.html">Service-4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Pages-1</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">Pages-1.1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-1.2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-1.3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-1.4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Pages-2</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Pages-3</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">Pages-3.1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-3.2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-3.3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pages-3.4</a>
+                                        </li>
+                                    </ul>
+                                </li>  
+                                <li>
+                                    <a href="#">Pages-4</a>
+                                </li>                              
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="single_post.html">Blog-1</a>
+                                </li>
+                                <li>
+                                    <a href="single_post.html">Blog-2</a>
+                                </li>
+                                <li>
+                                    <a href="single_post.html">Blog-3</a>
+                                </li>
+                                <li>
+                                    <a href="single_post.html">Blog-4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">Contact Us</a>
+                        </li>
+                    </ul> 
+                    <div class="header__contact ms-auto">
+                        <img src="images/icon/phone.svg" alt="" class="img-fluid">
+                        <div class="header__contact--content">
+                            <h4>Contact Us</h4>
+                            <p><a href="tel:+123-234-1234" class="color-1">+123-234-1234</a></p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="page-hero" class="page-hero section-overlay">
+        <div class="container page-hero__container">            
+            <div class="row">
+                <h1><span class="secondary-color">Services</span> <span>Detail</span></h1>
+                <p>Home / Service / Service Detail</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- service content -->
+    <section class="service-detail section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="images/service_detail/thumnail.png" alt="" class="img-fluid service-detail__thumbnail">
+                    <h3 class="color-2">About Couples Therapy</h3>
+                    <div class="detail-navigation">
+                        <a href="service.html" class="item">
+                            <img src="images/icon/folder.svg" alt="" class="img-fluid">
+                            <p class="secondary-color">Services</p>
+                        </a>
+                        <div class="space"></div>
+                        <a href="service_detail.html" class="item">
+                            <img src="images/icon/document.svg" alt="" class="img-fluid">
+                            <p class="secondary-color">Service Detail</p>
+                        </a>
+                        <div class="space"></div>
+                        <a href="#" class="item">
+                            <img src="images/icon/Arrow.svg" alt="" class="img-fluid">
+                            <p class="secondary-color">Share</p>
+                        </a>
+                    </div>
+                    <p>Vestibulum blandit felis a auctor efficitur. In in erat sed ipsum eleifend lacinia in nec libero. Sed dictum sagittis risus ipsum accumsan fermentum. Integer faucibus ullamcorper ipsum et aliquam. Vestibulum egestas erat et justo sollicitudin ultrices. Etiam ac tortor odio. In mi nulla, rhoncus ut luctus in, dictum et ligula. Aliquam efficitur sagittis ex nec rhoncus. Morbi eget arcu ullamcorper urna posuere lacinia eu non eros. Morbi eget dolor ipsum. Integer varius facilisis arcu eget iaculis. Etiam posuere sapien ut luctus vehicula. Aenean non auctor arcu, et tempus arcu. Integer tristique volutpat posuere.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/service_detail/detail_1.png" alt="" class="img-fluid service-detail__image left-image">
+                        </div>
+                        <div class="col-6">
+                            <img src="images/service_detail/detail_2.png" alt="" class="img-fluid service-detail__image right-image">
+                        </div>
+                    </div>
+                    <h6 class="color-2">Advantages Of Couples Therapy</h6>
+                    <p>Etiam ac enim velit. Ut ut mi sed turpis accumsan sagittis ac eu neque magna. Etiam ac nisi tellus. Morbi at velit nisl. Donec ut felis libero. Donec tincidunt consequat tellus, id mattis sapien tempu condimentum non.</p>
+                    <ul class="secondary-list-style">
+                        <li><a href="#" class="color-2">Vestibulum blandit felis a auctor efficitur. In in erat sed ipsum eleifend lacinia.</a></li>
+                        <li><a href="#" class="color-2">Etiam ac tortor odio. In mi nulla, rhoncus ut luctus in, dictum et ligula.</a></li>
+                        <li><a href="#" class="color-2">Aliquam efficitur sagittis ex nec rhoncus. Morbi eget arcu ullamcorper urna posuere lacinia eu non.</a></li>
+                        <li><a href="#" class="color-2">Aenean non auctor arcu, et tempus arcu. Integer tristique volutpat posuere lacinia leo a volutpat.</a></li>
+                        <li><a href="#" class="color-2">Curabitur ut dui nec lorem fermentum molestie non ut mauris. In imperdiet tortor.</a></li>
+                        <li><a href="#" class="color-2">Vivamus pharetra neque a lacus ullamcorper suscipit. Aenean blandit euismod dignissim.</a></li>
+                        <li><a href="#" class="color-2">Praesent suscipit fermentum mi. Mauris vel est nec risus dignissim facilisis.</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 side-bar right-side-bar">
+                    <div class="card card-left background-primary">
+                        <div class="card-body">
+                            <h5>Other Services</h5>
+                            <ul class="secondary-list-style">
+                                <li><a href="#">Individual Therapy</a></li>
+                                <li><a href="#">Family Counseling</a></li>
+                                <li><a href="#">Children Therapy</a></li>
+                                <li><a href="#">Group Counseling</a></li>
+                                <li><a href="#">Career Counseling</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card__contact">
+                        <div class="card-body">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name">                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Your Phone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone Number">                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Select Date</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Select Date">                                    
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Select Time</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Select Time">                                    
+                                </div>
+                                <button class="btn btn-secondary">book an appointment</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card card__consultation section-overlay">
+                        <div class="card-body">
+                            <h5>You Need to Understand That Mental Anxiety Can be <span class="secondary-color">Discussed</span></h5>
+                            <button class="btn btn-secondary">consultation now</button>
+                        </div>
+                    </div>
+                    <div class="card card-right card__social background-primary">
+                        <div class="card-body">
+                            <h5>Follow Us On:</h5>
+                            <ul class="social-items">
+                                <li class="">
+                                    <a href="#" class="social-icon">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="social-icon">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="social-icon">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer__row--top">
+                <div class="col-xl-4 col-lg-8 footer__about">
+                    <a href="index.html"><img src="images/Logo.png" alt="" class="img-fluid logo"></a>
+                    <p class="mb-30">Curabitur ut dui nec lorem fermentum molestie et non ut mauris. In imperdiet tortor sit amet luctus scelerisque. Aenean tempor nisi eget.</p>
+                    <ul>
+                        <li class="">
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>             
+                </div>
+                <div class="col-xl-1 col-lg-4"></div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <h5 class="footer__title">Quick Links</h5>
+                    <ul class="secondary-list-style">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6">
+                    <h5 class="footer__title">Service</h5>
+                    <ul class="secondary-list-style">
+                        <li><a href="#">Individual Therapy</a></li>
+                        <li><a href="#">Family Counseling</a></li>
+                        <li><a href="#">Couples Therapy</a></li>
+                        <li><a href="#">Children Therapy</a></li>
+                        <li><a href="#">Group Counseling</a></li>
+                        <li><a href="#">Career Counseling</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <div class="footer__info">
+                        <h5 class="footer__title">Information</h5>
+                        <ul>
+                            <li>
+                                <img src="images/icon/footer/phone.svg" alt="" class="img-fluid me-2">
+                                <a href="tel:+1232341234">+123-234-1234</a>
+                            </li>
+                            <li>
+                                <img src="images/icon/footer/mail.svg" alt="" class="img-fluid me-2">
+                                <a href="mailto:hello@awesomesite.com">hello@awesomesite.com</a>
+                            </li>
+                            <li>
+                                <img src="images/icon/footer/location.svg" alt="" class="img-fluid me-2">
+                                99 Roving St., Big City, PKU 23456
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="footer__title ">Opening Hours</h5>
+                        <p>Monday - Saturday ( 09.00 - 21.00 ) Sunday ( Closed )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__row--bottom text-center">
+                <p>Copyright 2023 &copy; All Right Reserved Design by Rometheme</p>
+            </div>
+        </div>
+    </footer>
+
+     <!--build:js js/main.min.js -->
+     <script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/jquery/jquery.min.js"></script>
+     <script src="js/main.js"></script>
+     <!-- endbuild -->
+</body>
+</html>
