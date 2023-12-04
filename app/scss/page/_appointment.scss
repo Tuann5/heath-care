@@ -1,0 +1,10 @@
+.appointment-page {
+    &__appointment {
+        position: unset;
+        height: unset;
+
+        .appointment__info {
+            padding-top: 0;
+        }
+    }
+}

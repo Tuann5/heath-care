@@ -1,0 +1,20 @@
+:root {
+    --Primary: #2A4359;
+    --Secondary: #D9A441;
+    --Light: #F2F2F2;
+    --Color-1: #858585;
+    --Color-2: #192735;
+}
+
+$sm_width : 576px;
+$md_width : 768px;
+$lg_width : 992px;
+$xl_width : 1200px;
+
+$media_max_width: min(100vw - 100px, 470px);
+$media_max_height: calc($media_max_width / 0.875);
+
+$media_small_width: min(100vw - 200px, 300px);
+$media_small_height: calc($media_small_width / 1.457);
+$media_content_height_xl: calc($media_max_height + $media_small_height);
+$media_content_height: calc($media_max_height + 50px);

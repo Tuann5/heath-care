@@ -1,0 +1,34 @@
+.pricing-page {
+    &__consultation {
+        padding-top: 100px;
+        padding-bottom: 190px;
+    }
+
+    &__appointment {
+        height: 861px;
+
+        .section__overlap {
+            height: 805px;
+            top: -89px;
+            z-index: 1000;
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+    .pricing-page {
+        &__consultation {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    
+        &__appointment {
+            height: unset;
+            padding-top: 50px;
+    
+            .section__overlap {
+                height: unset;
+            }
+        }
+    }
+}

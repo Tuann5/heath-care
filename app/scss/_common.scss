@@ -1,0 +1,143 @@
+html {
+    border: none !important;
+}
+
+body {
+    font-size: 18px;
+    color: var(--Color-1, #858585);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Mukta Vaani', sans-serif;
+    background: var(--Light);
+}
+
+p {
+    font-size: 18px;
+    color: var(--Color-1, #858585);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Mukta Vaani', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--Light);
+
+    &:not(.social-icon):not(.btn):hover {
+        color: var(--Secondary);
+        text-decoration: underline;
+    }
+}
+
+
+/* Heading element*/
+h1 {
+    font-family: Karla;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    font-family: Karla;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-family: Radley;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 19px;
+}
+
+h5 {
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+h6 {
+    font-family: Karla;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Color */
+// Text -color
+.primary-color {
+    color: var(--Primary);
+}
+
+.light-color {
+    color: var(--Light);
+}
+
+.secondary-color {
+    color: var(--Secondary);
+}
+
+.color-1 {
+    color: var(--Color-1);
+}
+
+.color-2 {
+    color: var(--Color-2);
+}
+
+// Background - color
+.background-primary {
+    background: var(--Primary);
+}
+
+.background-secondary {
+    background: var(--Secondary);
+}
+
+.background-light {
+    background: var(--Light);
+}
+
+/* Image */
+.left-image {
+    border-top-right-radius: 0 !important;
+}
+
+.right-image {
+    border-bottom-left-radius: 0 !important;
+}
+
+/* Border */
+.secondary-border {
+    border: 1px solid var(--Secondary);
+}
+
+/* Form */
+form {
+    & > * {
+        margin-bottom: 20px;
+    }
+
+    input, textarea {
+        background: var(--Light) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Color-2, #192735) !important;
+    }
+
+    textarea {
+        resize: none;
+    }
+}

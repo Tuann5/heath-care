@@ -1,0 +1,44 @@
+.footer {
+    padding-top: 70px;
+    background: var(--Primary);
+    color: var(--Light);
+
+    ul {
+        padding-left: 0;
+    }
+    
+    p {
+        color: var(--Light);
+    }
+
+    &__row--top {
+        border-bottom: 1px solid var(--Secondary);
+        padding-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__about {
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        ul li {
+            margin-top: 5px;
+        }
+    }
+
+    .social-icon:hover {
+        background: var(--Color-1);
+    } 
+}

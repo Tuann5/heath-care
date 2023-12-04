@@ -1,0 +1,194 @@
+header {
+    a:not(.social-icon):not(.btn):hover {
+        text-decoration: none;
+    }
+     
+    .top-nav {
+        background: var(--Light, #F2F2F2);
+        padding: 8px;
+    
+        .header__contact {
+            .nav-item {
+                .text-with-image {
+                    margin-left: 18px;
+                }
+            }
+        }
+    
+        .header__social {
+            &--item {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .main-nav {
+        background: var(--Primary, #2A4359);
+    
+        // Css multiple mega menu
+        .main-menu {
+            display: flex;
+            font-size: 18px !important;
+        
+            ul {
+                list-style: none;
+                padding-left: 0;
+                font-weight: 400 !important;
+                
+                li {
+                    white-space: nowrap; // Display on one line
+                }
+            }
+        
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+
+            .menu-item-has-children {
+                position: relative;
+                z-index: 9999;
+    
+                &:hover > .sub-menu {
+                    display: block;   
+                }
+            }
+
+            // Level-1 menu - Start            
+            & > li {
+                padding: 8px 15px;
+                position: relative;
+            }
+
+            & > .menu-item-has-children::after {
+                display: inline-block;
+                vertical-align: middle;
+                content: '';
+                background-image: url('../images/icon/drop-down.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 5.457px;
+                margin-left: 2px;
+            }
+            // Level-1 menu - End
+    
+            .sub-menu {    
+                position: absolute;    
+                top: 100%;
+                left: 0;
+                background: white;
+                display: none;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: none;
+                padding: .5rem 0;
+                min-width: 150px;
+        
+                a {
+                    display: block;
+                    padding: 10px 20px; 
+                    color: var(--blue-color);
+                }
+        
+                li:hover {
+                    background: #C7CCD1;
+                    
+                    &::before {
+                        color: var(--blue-color);
+                    }
+                }
+        
+                .menu-item-has-children {
+
+                    & > .sub-menu {
+                        padding: 0;
+                        display: none;
+                        top: 0;
+                        left: 100%;
+                    }
+        
+                    &:hover > .sub-menu {
+                        display: block;
+                    }
+    
+                    & > a::after {
+                        display: none;
+                    }
+                }
+                
+                > .menu-item-has-children::before {
+                    content: "\f105";
+                        font: normal normal normal 14px/1 FontAwesome;
+                        position: absolute;
+                        vertical-align: .255em;;
+                        right: 5px;
+                        top: 14px;
+                        color: #e7f1f8;  
+                }
+            }     
+            
+        }
+
+        // Contact
+        .header__contact {
+            display: flex;
+            gap: 13px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 5px;
+            }
+            
+            &--content {
+                h4 {
+                    color: var(--Light, #F2F2F2);
+                    font-family: Mukta Vaani;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin-bottom: 0
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: normal;
+                    margin-bottom: 0
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg-width) {
+    .header {
+        .main-nav {
+            .main-menu {    
+                .sub-menu {    
+                    position: unset;
+                    
+                    & > :not(:last-child) {
+                        border-bottom: 1px dashed #020e54;
+                    }                  
+                    
+    
+                    .menu-item-has-children {
+                        & > .sub-menu {
+                            & > * {
+                                border-bottom: none;
+                            } 
+    
+                            padding-left: 1rem;
+                        }
+    
+                        & > a::before {
+                            content: "\f107";
+                        }
+                    } 
+                }    
+            }
+        }
+    }
+}
